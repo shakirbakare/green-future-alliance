@@ -80,7 +80,7 @@ body p {
   margin: 0 auto;
   padding: 12rem 9.6rem;
   position: relative;
-  background: linear-gradient(to right, rgb(44, 95, 45), rgba(44, 95, 45, 0), rgba(44, 95, 45, 0)), url("..assets/images/bg-img.jpg");
+  background: linear-gradient(to right, rgb(44, 95, 45), rgba(44, 95, 45, 0), rgba(44, 95, 45, 0)), url("../assets/images/bg-img.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -179,4 +179,29 @@ body p {
 .about-us__paragraph {
   width: 98rem;
   margin: 0 auto;
+}
+
+.metrics {
+  text-align: center;
+}
+.metrics span {
+  text-transform: uppercase;
+}
+.metrics h3 {
+  font-size: 3.6rem;
+}
+.metrics .container {
+  display: grid;
+  grid-template-rows: 15rem;
+  grid-template-columns: repeat(3, 31rem);
+  align-items: center;
+  gap: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.metrics .container div {
+  background: #f9f9f9;
+  padding: 5rem 4rem;
+  border-radius: 2rem;
 }/*# sourceMappingURL=style.css.map */
