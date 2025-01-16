@@ -27,6 +27,7 @@ body {
 body h2 {
   font-size: 3.6rem;
   color: #001a00;
+  margin-bottom: 6rem;
 }
 body p {
   font-size: 1.6rem;
@@ -75,11 +76,11 @@ body p {
 
 .hero {
   width: 144rem;
-  height: 71.4rem;
+  height: 100vh;
   margin: 0 auto;
   padding: 12rem 9.6rem;
   position: relative;
-  background: linear-gradient(to right, rgb(44, 95, 45), rgba(44, 95, 45, 0), rgba(44, 95, 45, 0)), url("../bg-img.jpg");
+  background: linear-gradient(to right, rgb(44, 95, 45), rgba(44, 95, 45, 0), rgba(44, 95, 45, 0)), url("..assets/images/bg-img.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -152,4 +153,30 @@ body p {
   100% {
     transform: translateY(0);
   }
+}
+.about-us {
+  background: #f9f9f9;
+  text-align: center;
+}
+.about-us__tag {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.about-us div {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+.about-us__images {
+  width: 35rem;
+  height: 50rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+.about-us__paragraph {
+  width: 98rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
