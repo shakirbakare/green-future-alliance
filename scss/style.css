@@ -29,9 +29,15 @@ body h2 {
   color: #001a00;
   margin-bottom: 6rem;
 }
+body h3 {
+  font-size: 2.4rem;
+}
 body p {
   font-size: 1.6rem;
   color: #777;
+}
+body span {
+  text-transform: uppercase;
 }
 
 .section {
@@ -184,12 +190,6 @@ body p {
 .metrics {
   text-align: center;
 }
-.metrics span {
-  text-transform: uppercase;
-}
-.metrics h3 {
-  font-size: 3.6rem;
-}
 .metrics .container {
   display: grid;
   grid-template-rows: 15rem;
@@ -204,4 +204,68 @@ body p {
   background: #f9f9f9;
   padding: 5rem 4rem;
   border-radius: 2rem;
+}
+.metrics .container div h3 {
+  font-size: 3.6rem;
+}
+
+.project {
+  background: #f9f9f9;
+  text-align: center;
+}
+.project .projects-grid {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 7rem;
+  align-items: center;
+}
+.project .projects-grid div {
+  text-align: left;
+}
+.project__image {
+  width: 60rem;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem;
+}
+.project__description {
+  margin: 1rem 0 2rem 0;
+}
+.project .urban-desc {
+  width: 38rem;
+}
+.project .coastal-desc {
+  width: 34rem;
+}
+.project .eco-edu-desc {
+  width: 38rem;
+}
+.project .project-link-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.project .project-link-container:hover .project-link-icon {
+  transform: translateX(0.5rem);
+  color: rgb(44, 95, 45);
+}
+.project .project-link-container .project-link-icon {
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.project__link:link, .project__link:visited {
+  text-decoration: none;
+  color: #001a00;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.project__link:link:hover, .project__link:visited:hover {
+  color: rgb(44, 95, 45);
 }/*# sourceMappingURL=style.css.map */

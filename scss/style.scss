@@ -56,9 +56,17 @@ body {
     margin-bottom: 6rem;
   }
 
+  h3 {
+    font-size: 2.4rem;
+  }
+
   p {
     font-size: 1.6rem;
     color: $secondary-text;
+  }
+
+  span {
+    text-transform: uppercase;
   }
 }
 
@@ -255,14 +263,6 @@ body {
 .metrics {
   text-align: center;
 
-  span {
-    text-transform: uppercase;
-  }
-
-  h3 {
-    font-size: 3.6rem;
-  }
-
   .container {
     display: grid;
     grid-template-rows: 15rem;
@@ -276,6 +276,87 @@ body {
       background: $grey-background;
       padding: 5rem 4rem;
       border-radius: 2rem;
+
+      h3 {
+        font-size: 3.6rem;
+      }
+    }
+  }
+}
+
+// PROJECT SECTION
+
+.project {
+  background: $grey-background;
+  text-align: center;
+
+  .projects-grid {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 7rem;
+    align-items: center;
+
+    div {
+      text-align: left;
+    }
+  }
+
+  &__image {
+    width: 60rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+
+  &__description {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .urban-desc {
+    width: 38rem;
+  }
+
+  .coastal-desc {
+    width: 34rem;
+  }
+
+  .eco-edu-desc {
+    width: 38rem;
+  }
+
+  .project-link-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      .project-link-icon {
+        transform: translateX(0.5rem);
+        color: $primary-color;
+      }
+    }
+
+    .project-link-icon {
+      font-size: 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $primary-text;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    &:hover {
+      color: $primary-color;
     }
   }
 }
