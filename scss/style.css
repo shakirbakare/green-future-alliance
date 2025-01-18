@@ -38,6 +38,9 @@ body p {
 }
 body span {
   text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #777;
 }
 
 .section {
@@ -50,7 +53,6 @@ body span {
   height: 8.6rem;
   background-color: #f9f9f9;
   padding: 3rem 9.6rem;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,10 +84,8 @@ body span {
 
 .hero {
   width: 144rem;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 12rem 9.6rem;
-  position: relative;
+  height: 71.4rem;
+  padding: 17.5rem 9.6rem;
   background: linear-gradient(to right, rgb(44, 95, 45), rgba(44, 95, 45, 0), rgba(44, 95, 45, 0)), url("../assets/images/bg-img.jpg");
   background-size: cover;
   background-position: 50% 50%;
@@ -140,9 +140,9 @@ body span {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 .hero__arrow {
-  position: absolute;
-  top: 56%;
-  left: 18%;
+  font-size: 4.8rem;
+  color: #fff;
+  margin-left: 20rem;
   display: block;
   margin-top: 5rem;
   transition: move-down-indicator 0.3s;
@@ -154,7 +154,7 @@ body span {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(8rem);
+    transform: translateY(10rem);
   }
   100% {
     transform: translateY(0);
@@ -164,27 +164,24 @@ body span {
   background: #f9f9f9;
   text-align: center;
 }
-.about-us__tag {
-  display: block;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
 .about-us div {
+  width: 113.6rem;
   display: flex;
   gap: 4rem;
   justify-content: center;
-  margin-bottom: 6rem;
+  margin: 6rem auto;
 }
 .about-us__images {
-  width: 35rem;
+  width: 35.2rem;
   height: 50rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2rem;
 }
 .about-us__paragraph {
-  width: 98rem;
+  width: 96.4rem;
   margin: 0 auto;
+  color: #555;
 }
 
 .metrics {
@@ -195,18 +192,22 @@ body span {
   grid-template-rows: 15rem;
   grid-template-columns: repeat(3, 31rem);
   align-items: center;
-  gap: 3rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  justify-content: center;
+  gap: 4rem;
+  width: 101rem;
   margin: 0 auto;
 }
 .metrics .container div {
   background: #f9f9f9;
   padding: 5rem 4rem;
   border-radius: 2rem;
+  width: 31rem;
 }
 .metrics .container div h3 {
   font-size: 3.6rem;
+}
+.metrics .container div p {
+  color: #001a00;
 }
 
 .project {
@@ -215,19 +216,19 @@ body span {
 }
 .project .projects-grid {
   margin: 0 auto;
-  width: 80%;
+  width: 98.4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 7rem;
+  gap: 6rem;
   align-items: center;
 }
 .project .projects-grid div {
   text-align: left;
 }
 .project__image {
-  width: 60rem;
-  height: 35rem;
+  width: 54.4rem;
+  height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2rem;
@@ -245,6 +246,8 @@ body span {
   width: 38rem;
 }
 .project .project-link-container {
+  width: 12.7rem;
+  height: 2.9rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -252,19 +255,20 @@ body span {
   transition: all 0.3s ease;
 }
 .project .project-link-container:hover .project-link-icon {
-  transform: translateX(0.5rem);
+  transform: translateX(1rem);
   color: rgb(44, 95, 45);
 }
 .project .project-link-container .project-link-icon {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  margin-top: 1rem;
   transition: all 0.3s ease;
 }
 .project__link:link, .project__link:visited {
   text-decoration: none;
   color: #001a00;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .project__link:link:hover, .project__link:visited:hover {
   color: rgb(44, 95, 45);

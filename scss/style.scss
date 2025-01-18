@@ -67,6 +67,9 @@ body {
 
   span {
     text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: $secondary-text;
   }
 }
 
@@ -85,7 +88,6 @@ body {
   height: 8.6rem;
   background-color: $grey-background;
   padding: 3rem 9.6rem;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,13 +123,10 @@ body {
 
 .hero {
   width: 144rem;
-  // height: 71.4rem;
-  height: 100vh;
+  height: 71.4rem;
 
-  margin: 0 auto;
-
-  padding: 12rem 9.6rem;
-  position: relative;
+  padding: 17.5rem 9.6rem;
+  // position: relative;
   background: linear-gradient(
       to right,
       rgba(44, 95, 45, 1),
@@ -201,9 +200,12 @@ body {
   }
 
   &__arrow {
-    position: absolute;
-    top: 56%;
-    left: 18%;
+    font-size: 4.8rem;
+    color: $white-background;
+    margin-left: 20rem;
+    // position: absolute;
+    // top: 55%;
+    // left: 18.5%;
 
     display: block;
     margin-top: 5rem;
@@ -218,7 +220,7 @@ body {
   }
 
   50% {
-    transform: translateY(8rem);
+    transform: translateY(10rem);
   }
 
   100% {
@@ -232,29 +234,25 @@ body {
   background: $grey-background;
   text-align: center;
 
-  &__tag {
-    display: block;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-
   div {
+    width: 113.6rem;
     display: flex;
     gap: 4rem;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin: 6rem auto;
   }
 
   &__images {
-    width: 35rem;
+    width: 35.2rem;
     height: 50rem;
     object-fit: cover;
     border-radius: 2rem;
   }
 
   &__paragraph {
-    width: 98rem;
+    width: 96.4rem;
     margin: 0 auto;
+    color: $dark-text;
   }
 }
 
@@ -268,17 +266,23 @@ body {
     grid-template-rows: 15rem;
     grid-template-columns: repeat(3, 31rem);
     align-items: center;
-    gap: 3rem;
-    width: fit-content;
+    justify-content: center;
+    gap: 4rem;
+    width: 101rem;
     margin: 0 auto;
 
     div {
       background: $grey-background;
       padding: 5rem 4rem;
       border-radius: 2rem;
+      width: 31rem;
 
       h3 {
         font-size: 3.6rem;
+      }
+
+      p {
+        color: $primary-text;
       }
     }
   }
@@ -292,11 +296,11 @@ body {
 
   .projects-grid {
     margin: 0 auto;
-    width: 80%;
+    width: 98.4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 7rem;
+    gap: 6rem;
     align-items: center;
 
     div {
@@ -305,8 +309,8 @@ body {
   }
 
   &__image {
-    width: 60rem;
-    height: 35rem;
+    width: 54.4rem;
+    height: 30rem;
     object-fit: cover;
     border-radius: 2rem;
   }
@@ -328,6 +332,8 @@ body {
   }
 
   .project-link-container {
+    width: 12.7rem;
+    height: 2.9rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -336,14 +342,17 @@ body {
 
     &:hover {
       .project-link-icon {
-        transform: translateX(0.5rem);
+        transform: translateX(1rem);
         color: $primary-color;
+
+        // animation: arrow-infinite 1s infinite;
       }
     }
 
     .project-link-icon {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 600;
+      margin-top: 1rem;
       transition: all 0.3s ease;
     }
   }
@@ -353,10 +362,22 @@ body {
     text-decoration: none;
     color: $primary-text;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
 
     &:hover {
       color: $primary-color;
     }
   }
 }
+
+// @keyframes arrow-infinite {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   50% {
+//     transform: translateX(1rem);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
