@@ -86,6 +86,7 @@ body span {
   width: 144rem;
   height: 71.4rem;
   padding: 17.5rem 9.6rem;
+  position: relative;
   background: linear-gradient(to right, rgb(44, 95, 45), rgba(44, 95, 45, 0), rgba(44, 95, 45, 0)), url("../assets/images/bg-img.jpg");
   background-size: cover;
   background-position: 50% 50%;
@@ -140,11 +141,9 @@ body span {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 .hero__arrow {
-  font-size: 4.8rem;
-  color: #fff;
-  margin-left: 20rem;
-  display: block;
-  margin-top: 5rem;
+  position: absolute;
+  top: 68%;
+  left: 18.5%;
   transition: move-down-indicator 0.3s;
   animation: move-down-indicator 2s infinite ease;
 }

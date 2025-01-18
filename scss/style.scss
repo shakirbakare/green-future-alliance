@@ -126,7 +126,7 @@ body {
   height: 71.4rem;
 
   padding: 17.5rem 9.6rem;
-  // position: relative;
+  position: relative;
   background: linear-gradient(
       to right,
       rgba(44, 95, 45, 1),
@@ -200,15 +200,15 @@ body {
   }
 
   &__arrow {
-    font-size: 4.8rem;
-    color: $white-background;
-    margin-left: 20rem;
-    // position: absolute;
-    // top: 55%;
-    // left: 18.5%;
+    // font-size: 4.8rem;
+    // color: $white-background;
+    // margin-left: 20rem;
+    position: absolute;
+    top: 68%;
+    left: 18.5%;
 
-    display: block;
-    margin-top: 5rem;
+    // display: block;
+    // margin-top: 5rem;
     transition: move-down-indicator 0.3s;
     animation: move-down-indicator 2s infinite ease;
   }
