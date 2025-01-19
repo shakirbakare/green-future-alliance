@@ -325,4 +325,59 @@ body span {
 .get-involved__button--secondary:active {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   transform: translateY(0.5rem);
+}
+
+.testimonials {
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30.3rem);
+  gap: 4rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  width: 30.3rem;
+  height: 48rem;
+  text-align: left;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.testimonial-card__author-img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.testimonial-card__author-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.testimonial-card__author-role {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: #808080;
+}
+.testimonial-card__quotes {
+  position: absolute;
+  top: 34%;
+  left: 10%;
+}
+.testimonial-card .text-container {
+  height: 28.12rem;
+  padding: 4rem 3rem;
+  background: #fff;
+}
+.testimonial-card__text {
+  width: 24.3rem;
+  margin-bottom: 2rem;
+}
+.testimonial-card .text-width-218 {
+  width: 21.8rem;
 }/*# sourceMappingURL=style.css.map */
