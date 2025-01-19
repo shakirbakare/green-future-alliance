@@ -451,4 +451,14 @@ body span {
   height: 74.9rem;
   gap: 12rem;
   justify-content: center;
+  margin-bottom: 6rem;
+}
+
+iframe {
+  border-radius: 2rem;
+}
+
+.grid-map {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
