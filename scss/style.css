@@ -304,11 +304,11 @@ body span {
   color: #fff;
 }
 .get-involved__button--primary:hover {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.5rem);
 }
 .get-involved__button--primary:active {
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   transform: translateY(0.5rem);
 }
 .get-involved__button--secondary {
@@ -319,11 +319,11 @@ body span {
 .get-involved__button--secondary:hover {
   background: rgb(44, 95, 45);
   color: #fff;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.5rem);
 }
 .get-involved__button--secondary:active {
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   transform: translateY(0.5rem);
 }
 
@@ -380,4 +380,75 @@ body span {
 }
 .testimonial-card .text-width-218 {
   width: 21.8rem;
+}
+
+.contact-us__headline {
+  margin-bottom: 2rem;
+}
+.contact-us__paragraph {
+  width: 51.4rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+.contact-us form {
+  width: 51.4rem;
+}
+.contact-us input {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  background: #f9f9f9;
+  font-size: 1.8rem;
+  color: #919191;
+}
+.contact-us input:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.contact-us input:last-of-type {
+  margin-bottom: 4rem;
+  display: flex;
+  padding-bottom: 14rem;
+}
+.contact-us button {
+  padding: 1.6rem 3.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  background: rgb(44, 95, 45);
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.contact-us button:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5rem);
+}
+.contact-us__image {
+  width: 50rem;
+  height: 74.9rem;
+  border-radius: 2rem;
+}
+.contact-us__email {
+  margin-bottom: 1.5rem;
+}
+.contact-us a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+}
+.contact-us address {
+  margin-top: 1.5rem;
+  color: #555;
+  font-style: normal;
+}
+
+.contact-us-grid {
+  display: grid;
+  grid-template-columns: 51.4rem 50rem;
+  height: 74.9rem;
+  gap: 12rem;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
