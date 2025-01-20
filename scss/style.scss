@@ -111,15 +111,9 @@ body {
 
   padding: 17.5rem 9.6rem;
   position: relative;
-  background: linear-gradient(
-      to right,
-      rgba(44, 95, 45, 1),
-      rgba(44, 95, 45, 0),
-      rgba(44, 95, 45, 0)
-    ),
-    url("../assets/images/bg-img.jpg");
+  background: url("../assets/images/bg-img.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 100%;
 
   &__headline {
     font-size: 4.8rem;
