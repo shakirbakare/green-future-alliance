@@ -658,6 +658,12 @@ iframe {
     color: $grey-background;
     font-size: 1.8rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: hsl(121, 37%, 32%);
+    }
   }
 
   label {
