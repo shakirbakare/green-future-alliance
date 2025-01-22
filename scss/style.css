@@ -480,18 +480,30 @@ iframe {
 .footer__link {
   margin-right: 3rem;
 }
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #f9f9f9;
+}
+.footer form div {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
 .footer form:not(:last-child) {
   display: block;
 }
 .footer input {
-  padding: 2rem;
+  display: block;
+  padding: 1.6rem;
   width: 30rem;
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
   border: none;
   outline: none;
   width: 30rem;
-  height: 5.9rem;
+  height: 5.5rem;
+  background-color: #001400;
+  color: #777;
 }
 .footer input::-moz-placeholder {
   font-size: 1.6rem;
@@ -506,13 +518,12 @@ iframe {
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   border: none;
-  display: inline-block;
+  display: block;
   margin-left: -0.5rem;
   background: rgb(44, 95, 45);
   color: #f9f9f9;
   font-size: 1.8rem;
   font-weight: 600;
-  margin-top: 3rem;
 }
 .footer label {
   color: #f9f9f9;

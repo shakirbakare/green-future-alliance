@@ -611,19 +611,35 @@ iframe {
     margin-right: 3rem;
   }
 
+  &__copyright {
+    font-size: 1.4rem;
+    color: $grey-background;
+  }
+
+  form {
+    div {
+      display: flex;
+      align-items: center;
+      margin-top: 3rem;
+    }
+  }
+
   form:not(:last-child) {
     display: block;
   }
 
   input {
-    padding: 2rem;
+    display: block;
+    padding: 1.6rem;
     width: 30rem;
     border-top-left-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
     border: none;
     outline: none;
     width: 30rem;
-    height: 5.9rem;
+    height: 5.5rem;
+    background-color: #001400;
+    color: $secondary-text;
   }
 
   input::placeholder {
@@ -636,13 +652,12 @@ iframe {
     border-top-right-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     border: none;
-    display: inline-block;
+    display: block;
     margin-left: -0.5rem;
     background: $primary-color;
     color: $grey-background;
     font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 3rem;
   }
 
   label {
